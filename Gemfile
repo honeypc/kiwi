@@ -8,7 +8,7 @@ gem 'rails', '~> 5.2.1'
 # Use Puma as the app server
 gem 'puma', '~> 3.11'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
-# gem 'jbuilder', '~> 2.5'
+gem 'jbuilder', '~> 2.5'
 # Use Redis adapter to run Action Cable in production
 gem 'redis', '~> 4.0'
 # Use ActiveModel has_secure_password
@@ -22,8 +22,8 @@ gem 'mongoid', '~> 7.0'
 gem 'bson_ext'
 # Devise is a flexible authentication solution for Rails based on Warden
 gem 'devise'
-# Simple, multi-client and secure token-based authentication for Rails
-gem 'devise_token_auth'
+# bundle exec rake doc:rails generates the API under doc/api.
+gem 'sdoc', '~> 0.4.0', group: :doc
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
