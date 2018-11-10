@@ -19,17 +19,23 @@ gem 'redis', '~> 4.0'
 
 # Ruby ODM framework for MongoDB
 gem 'mongoid', '~> 7.0'
+gem 'mongoid-locker'
 gem 'bson_ext'
 # Devise is a flexible authentication solution for Rails based on Warden
-gem 'devise'
+# gem 'devise'
+gem 'devise_token_auth', git: 'https://github.com/lynndylanhurley/devise_token_auth.git'
+gem 'omniauth'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
 
 # Reduces boot times through caching; required in config/boot.rb
-gem 'bootsnap', '>= 1.1.0', require: false
+gem 'bootsnap', '>= 1.1.0', require: 'bootsnap/setup'
 
 # Use Rack CORS for handling Cross-Origin Resource Sharing (CORS), making cross-origin AJAX possible
-# gem 'rack-cors'
+gem 'rack-cors'
+
+# Draper adds an object-oriented layer of presentation logic to your Rails application.
+gem 'draper'
 
 group :development, :test do
   gem 'rspec-rails', '~> 3.6'
